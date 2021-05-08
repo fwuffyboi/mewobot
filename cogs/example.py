@@ -11,7 +11,7 @@ class DevCommands(commands.Cog, name='Developer Commands'):
 		'''
 		The default check for this cog whenever a command is used. Returns True if the command is allowed.
 		'''
-		return ctx.author.id == 773466452661108747
+		return ctx.author.id == 773466452661108747 or 576773600905003039
 
 	@commands.command(  # Decorator to declare where a command is.
 		name='reload',  # Name of the command, defaults to function name.
