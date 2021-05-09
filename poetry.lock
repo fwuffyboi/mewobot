@@ -64,6 +64,17 @@ version = "7.1.2"
 
 [[package]]
 category = "main"
+description = "A Discord Rich Presence library for Python 2 & 3"
+name = "discord-rpc.py"
+optional = false
+python-versions = "*"
+version = "1.3.0"
+
+[package.dependencies]
+requests = "*"
+
+[[package]]
+category = "main"
 description = "A Python wrapper for the Discord API"
 name = "discord.py"
 optional = false
@@ -245,7 +256,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "310c33bfa3da803c978b76a7940995a8cff20154dfacdcfcc3ff6608e4551c45"
+content-hash = "f2f9d7ae2cb28a193e07869548fa20ef322fc659f171055bc3475b01a4ed53cc"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -282,6 +293,11 @@ chardet = [
 click = [
     {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
     {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
+]
+"discord-rpc.py" = [
+    {file = "discord-rpc.py-1.3.0.tar.gz", hash = "sha256:2301ffb59f7964e31fbac3c2fc35944532c452d6b6d806b2a0b30f422a8a6679"},
+    {file = "discord_rpc.py-1.3.0-py2-none-any.whl", hash = "sha256:9017a5884c536aa4cf7dde574ec75dad162caae5b68a219f9375417653ffb063"},
+    {file = "discord_rpc.py-1.3.0-py3-none-any.whl", hash = "sha256:289c3d77893c0d74acad872eb87a51a6492e20c052553525edf78963fb31bf3d"},
 ]
 "discord.py" = [
     {file = "discord.py-1.3.4-py3-none-any.whl", hash = "sha256:8ef58d6fc1e66903bc00ae79c4c09a38aa71043e88a83da4d2e8b9b1c9f9b9e2"},

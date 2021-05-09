@@ -1,9 +1,11 @@
 import discord
 from discord.ext import commands
+import sys
 
+def shutdown():
+	sys.exit() 
 
 class aboutCommands(commands.Cog, name='about commands'):
-
   def __init__(self, bot):
     self.bot = bot
 
@@ -34,8 +36,23 @@ class aboutCommands(commands.Cog, name='about commands'):
     """ ---for developers"""
     await ctx.send('https://mewo.fluffywolff.repl.co ' + (ctx.message.author.mention))
 
+  @commands.command(name='ping')
+  async def ping(self, ctx):
+    '''ping command'''
+    bot = self.bot
+    await ctx.send(f'PONG! {bot.latency}')
+
+  @commands.command(name='shutdownsys')
+  async def shutdownsys(self, ctx):
+    """ ---for developers"""
+    if ctx.message.author.name == "576773600905003039" or "773466452661108747":
+      await ctx.send('BOt SHUTTINg DOWn')
+      sys.exit()
+    else:
+      await ctx.send('no lol')
 
 
 # Adds cog
 def setup(bot):
   bot.add_cog(aboutCommands(bot))
+

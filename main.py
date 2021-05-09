@@ -4,8 +4,9 @@ from discord.ext import commands
 import os
 import discord
 from replit import db
-from pypresence import Presence 
+import discord_rpc
 import tracemalloc
+import time
 
 
 numcount = 0
@@ -26,14 +27,10 @@ async def on_ready():  # When the bot is ready
     print("Online")
     print(bot.user)# Prints the bot's username and identifier
     print('bot online')
-    #await bot.change_presence(game=discord.Game(name='stonks'))
-    pres = Presence(839387154156879892)
-    pres.connect()
-    await BaseClient.handshake
-    self.loop.run_until_complete(self.handshake())
-    self._check_running()
-    pres.update(state='hungry',details='meowing for food',large_image='mewo',large_image_key='mewobot')
-    
+    await bot.change_presence(activity=discord.Activity(name='spotify', type=2))
+    #await bot.change_presence(activity=discord.State(text='Enjoying life!')) #keep this bit
+
+
 
 extensions = [
 	'cogs.example',  # Same name as it would be if you were importing it
