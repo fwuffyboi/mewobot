@@ -33,7 +33,7 @@ class aboutCommands(commands.Cog, name='about commands'):
 
   @commands.command(name='onlinecheck')
   async def onlinecheck(self, ctx):
-    """ ---for developers"""
+    """ Mewobot\'s ping page """
     await ctx.send('https://mewo.fluffywolff.repl.co ' + (ctx.message.author.mention))
 
   @commands.command(name='ping')
@@ -49,10 +49,13 @@ class aboutCommands(commands.Cog, name='about commands'):
       await ctx.send('BOt SHUTTINg DOWn')
       sys.exit()
     else:
-      await ctx.send('no lol')
-
-
+      await ctx.send('You do not have premission to use that command, ' + (ctx.mesage.author.mention))
+      
+  @commands.command(name='info')
+  async def info(self, ctx):
+  	"""provides in depth detail about mewobot"""
+  	await ctx.send('to check mewobot\'s status, head over to https://stats.uptimerobot.com/LBYvotPr9m')
 # Adds cog
 def setup(bot):
   bot.add_cog(aboutCommands(bot))
-
+  

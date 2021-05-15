@@ -12,6 +12,7 @@ class imageCommands(commands.Cog, name='image'):
   #Commands here:
   @commands.command(name='cat')
   async def image(self, ctx):
+    """gives you a cat image"""
     cat_phrases = (random.choice(['cool cat!', 'aww, so floofy!', 'here you go uwu', 'Here!', 'look at the little floof, awww', 'cat really said :P']))
     await ctx.send(cat_phrases)
     x = requests.get('http://aws.random.cat/meow')
