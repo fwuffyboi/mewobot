@@ -40,7 +40,7 @@ class aboutCommands(commands.Cog, name='about commands'):
   async def ping(self, ctx):
     '''ping command'''
     bot = self.bot
-    await ctx.send(f'PONG! {bot.latency}')
+    await ctx.send(f'PONG! {bot.latency}' + ' ms')
 
   @commands.command(name='shutdownsys')
   async def shutdownsys(self, ctx):
