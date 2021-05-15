@@ -14,10 +14,6 @@ class textCommands(commands.Cog, name='text'):
   async def think(self, ctx):
     think_phrase = (random.choice(['*head empty*', '*confuse 100*', 'do cats ever look at humans and ever wonder \'why arent they fluffy?\'', 'why is my name mewo?', 'dogs are great but cats are greater, or are they?????', 'want a talking topic? if so, use the \'!topic\' command']))
     await ctx.send(think_phrase)
-    
-    
- 
-
 
 
   @commands.command(name='wsid')
