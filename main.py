@@ -36,7 +36,8 @@ extension = [
     'cogs.about',
     'cogs.data',
     'cogs.image',
-    'cogs.text'
+    'cogs.text',
+    'cogs.hidden'
 ]
 
 if __name__ == '__main__':  # Ensures this is the file being ran
