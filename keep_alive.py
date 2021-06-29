@@ -9,7 +9,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-	return 'online, check \'https://stats.uptimerobot.com/LBYvotPr9m\', for more information'
+	return '////MEWOBOT-IS-ONLINE////'
 	
 	
 def run():
