@@ -22,30 +22,17 @@ class aboutCommands(commands.Cog, name='about commands'):
   @commands.command(name='coolbot')
   async def cool_bot(self, ctx):
     """Is the bot cool?"""
-    await ctx.send('yes, ' + (ctx.message.author.mention) + ', This bot is indeed VERY cool :)')
-
-  @commands.command(name='onlinecheck')
-  async def onlinecheck(self, ctx):
-    """ Mewobot\'s ping page """
-    await ctx.send('https://mewo.fluffywolff.repl.co ' + (ctx.message.author.mention))
-    await ctx.send('''
- _______    _______    ________    _______                 ______    _______    _______ 
-|   |   |  |    ___|  |  |  |  |  |       |    _______    |   __ \  |       |  |_     _|
-|       |  |    ___|  |  |  |  |  |   -   |   |_______|   |   __ <  |   -   |    |   |  
-|__|_|__|  |_______|  |________|  |_______|               |______/  |_______|    |___|  
-
- _______    _______    _____      _______    _______    _______ 
-|       |  |    |  |  |     |_   |_     _|  |    |  |  |    ___|
-|   -   |  |       |  |       |   _|   |_   |       |  |    ___|
-|_______|  |__|____|  |_______|  |_______|  |__|____|  |_______|
-''')
+    await ctx.send('yes, ' + (ctx.message.author.mention) + ', This bot is indeed, VERY cool :)')
 
   @commands.command(name='pingo')
   async def pingo(self, ctx):
-    '''want latency?'''
+    '''want thy latency?'''
     bot = self.bot
     await ctx.send(f'PING-PONG! {bot.latency} ms')
       
+  @commands.command(name="mewo")
+  async def mewo(self, ctx):
+    await ctx.send("i am online and listening for commands! uwu")
 
 # Adds cog
 def setup(bot):
