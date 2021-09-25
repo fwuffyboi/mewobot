@@ -12,7 +12,7 @@ bot = commands.Bot(
     	case_insensitive=True  # Commands aren't case-sensitive
 )
 
-bot.author_id = 773466452661108747 and 576773600905003039 #ash, joelteon (discord id's to mark who the developers are)
+bot.author_id = 773466452661108747 and 576773600905003039 # me and joelteonYellow's discord id's (to mark who the developers are)
 
 @bot.event
 async def on_ready():  # When the bot is ready
